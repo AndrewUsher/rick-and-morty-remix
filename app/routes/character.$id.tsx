@@ -18,7 +18,6 @@ export const loader: LoaderFunction = async ({ params }) => {
 }
 
 export const meta: MetaFunction = ({ data }) => {
-  console.log(data)
   return {
     description: `More Information about ${data.name} from Rick and Morty`,
     'og:image': data.image,
