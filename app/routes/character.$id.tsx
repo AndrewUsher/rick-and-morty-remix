@@ -1,5 +1,5 @@
 import React, { type ReactNode } from 'react'
-import { LoaderFunction, useLoaderData } from 'remix'
+import { LoaderFunction, MetaFunction, useLoaderData } from 'remix'
 import { Entity, EntityInfo } from '~/components/Entity'
 
 export const loader: LoaderFunction = async ({ params }) => {
@@ -14,6 +14,15 @@ export const loader: LoaderFunction = async ({ params }) => {
       { label: 'Status', info: data.status }
     ],
     name: data.name
+  }
+}
+
+export const meta: MetaFunction = ({ data }) => {
+  console.log(data)
+  return {
+    description: `More Information about ${data.name} from Rick and Morty`,
+    'og:image': data.image,
+    title: `${data.name} | Mortypedia`
   }
 }
 
