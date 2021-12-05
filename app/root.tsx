@@ -1,4 +1,5 @@
-import { Links, LiveReload, Meta, Outlet } from 'remix'
+import React from 'react'
+import { Links, LiveReload, Meta, Outlet, Scripts } from 'remix'
 import { Header } from '~/components/Layout/Header'
 import styles from '~/tailwind.css'
 
@@ -20,6 +21,7 @@ export default function App () {
         {process.env.NODE_ENV === 'development' ? (
           <LiveReload />
         ) : null}
+        <Scripts />
       </body>
     </html>
   )
