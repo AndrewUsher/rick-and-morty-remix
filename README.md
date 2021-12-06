@@ -1,4 +1,4 @@
-# Welcome to Remix!
+# Mortypedia
 
 - [Remix Docs](https://remix.run/docs)
 
