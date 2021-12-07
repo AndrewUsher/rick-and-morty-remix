@@ -81,7 +81,7 @@ export default function CharactersRoute (): ReactNode {
   }, [fetcher.data])
   return (
     <main className="py-4 container mx-auto">
-      <div className="grid gap-x-4 gap-y-8 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-1 mb-8">
+      <div className="grid gap-x-4 gap-y-8 grid-cols-1 lg:grid-cols-4 sm:grid-cols-1 mb-8">
         {results.map(character => (
           <article key={character.id} className="mx-auto pb-4 shadow w-full">
             <img className="w-full mb-4" src={character.image} alt="" />
