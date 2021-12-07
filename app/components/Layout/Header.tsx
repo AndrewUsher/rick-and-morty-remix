@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <nav className="bg-green-600 p-6 px-10 flex items-center justify-between">
       <h1 className="text-4xl">Mortypedia</h1>
-      <ul className="flex justify-between space-x-6">
+      <ul className="hidden md:flex justify-between space-x-6">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/characters">Characters</NavLink>
         <NavLink to="/locations">Locations</NavLink>
