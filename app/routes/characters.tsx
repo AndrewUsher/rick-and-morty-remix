@@ -56,6 +56,17 @@ export const meta: MetaFunction = () => {
   }
 }
 
+type LineItemProps = {
+  label: string,
+  value: string
+}
+
+function LineItem ({ label, value }: LineItemProps) {
+  return (
+    <p className="flex justify-between items-baseline border-b-2 mb-2 pb-2 text-lg font-semibold">{label} <span className="font-normal text-base">{value}</span></p>
+  )
+}
+
 let pageNumber = 1
 
 export default function CharactersRoute (): ReactNode {
@@ -72,12 +83,14 @@ export default function CharactersRoute (): ReactNode {
     <main className="py-4 container mx-auto">
       <div className="grid gap-x-4 gap-y-8 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-1 mb-8">
         {results.map(character => (
-          <article key={character.id} className="mx-auto">
-            <img src={character.image} alt="" />
-            <div>{character.name}</div>
-            <div>{character.gender}</div>
-            <div>{character.species}</div>
-            <div>{character.status}</div>
+          <article key={character.id} className="mx-auto pb-4 shadow w-full">
+            <img className="w-full mb-4" src={character.image} alt="" />
+            <div className="pl-8 pr-8">
+              <h2 className="mb-4 text-2xl font-bold">{character.name}</h2>
+              <LineItem label="Gender" value={character.gender} />
+              <LineItem label="Species" value={character.species} />
+              <LineItem label="Status" value={character.status} />
+            </div>
           </article>
         ))}
       </div>
