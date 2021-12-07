@@ -82,9 +82,9 @@ export default function CharactersRoute (): ReactNode {
   return (
     <main className="py-4 container mx-auto">
       <div className="grid gap-x-4 gap-y-8 grid-cols-1 lg:grid-cols-4 sm:grid-cols-1 mb-8">
-        {results.map(character => (
+        {results.map((character, index) => (
           <article key={character.id} className="mx-auto pb-4 shadow w-full">
-            <img className="w-full mb-4" src={character.image} alt="" />
+            <img className="w-full mb-4" loading={index < 2 ? 'eager' : 'lazy'} src={character.image} alt="" />
             <div className="pl-8 pr-8">
               <h2 className="mb-4 text-2xl font-bold">{character.name}</h2>
               <LineItem label="Gender" value={character.gender} />
