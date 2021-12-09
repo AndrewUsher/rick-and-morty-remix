@@ -42,6 +42,17 @@ export const meta: MetaFunction = () => {
   }
 }
 
+type LineItemProps = {
+  label: string,
+  value: string
+}
+
+function LineItem ({ label, value }: LineItemProps) {
+  return (
+    <p className="flex justify-between items-baseline border-b-2 mb-2 pb-2 text-lg font-semibold">{label} <span className="font-normal text-base">{value}</span></p>
+  )
+}
+
 let pageNumber = 1
 
 export default function EpisodesRoute (): ReactNode {
@@ -58,10 +69,10 @@ export default function EpisodesRoute (): ReactNode {
     <main className="py-4 container mx-auto">
       <div className="grid gap-x-4 gap-y-8 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-1 mb-8">
         {results.map(episode => (
-          <article key={episode.id} className="mx-auto">
-            <div>{episode.name}</div>
-            <div>{episode.airDate}</div>
-            <div>{episode.episodeNumber}</div>
+          <article key={episode.id} className="mx-auto pb-4 shadow w-full pl-8 pr-8">
+            <h2 className="mb-4 text-2xl font-bold text-center pt-4">{episode.name}</h2>
+            <LineItem label="Air Date" value={episode.airDate} />
+            <LineItem label="Episode Number" value={episode.episodeNumber} />
           </article>
         ))}
       </div>
