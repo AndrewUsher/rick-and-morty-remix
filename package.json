@@ -11,22 +11,22 @@
     "postinstall": "remix setup node"
   },
   "dependencies": {
-    "@remix-run/react": "^1.1.1",
-    "@remix-run/serve": "^1.1.1",
-    "@remix-run/vercel": "^1.1.1",
+    "@remix-run/react": "1.1.1",
+    "@remix-run/serve": "1.1.1",
+    "@remix-run/vercel": "1.1.1",
     "concurrently": "7.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "remix": "^1.1.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "remix": "1.1.1",
     "tailwindcss": "3.0.7"
   },
   "devDependencies": {
     "@drewster/eslint-config": "3.1.1",
-    "@remix-run/dev": "^1.1.1",
-    "@types/react": "^17.0.24",
-    "@types/react-dom": "^17.0.9",
+    "@remix-run/dev": "1.1.1",
+    "@types/react": "17.0.37",
+    "@types/react-dom": "17.0.11",
     "babel-eslint": "10.1.0",
-    "eslint": "7",
+    "eslint": "7.32.0",
     "typescript": "4.5.4"
   },
   "engines": {
