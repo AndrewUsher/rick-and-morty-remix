@@ -21,7 +21,7 @@
     "tailwindcss": "3.0.7"
   },
   "devDependencies": {
-    "@drewster/eslint-config": "3.1.1",
+    "@drewster/eslint-config": "3.2.1",
     "@remix-run/dev": "^1.1.1",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
