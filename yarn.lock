@@ -121,10 +121,10 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
-"@drewster/eslint-config@3.1.1":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@drewster/eslint-config/-/eslint-config-3.1.1.tgz#06d2a370472c8094f24ab0ab99aaf7f141253b8b"
-  integrity sha512-6fFbvpQhD9ecfCD2PHCB/s61a3dX+HAnPlJPh774F+O65E2M9TBGrBEK3ALiLAsF3Kvh9NRcefVa98AZ7pVKow==
+"@drewster/eslint-config@3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@drewster/eslint-config/-/eslint-config-3.2.1.tgz#61d25c0802768e108ff9a4b1ca7c14cb89f599ab"
+  integrity sha512-ggOqa1wQcaQVC9S3vRZnsJREKKXA6eU7g6HtBBJmh3TsCGZVu8gz6IbbvOeU1/2zgtU7lw8+oYGrc+0xQV5pYQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "4.13.0"
     "@typescript-eslint/parser" "4.13.0"
