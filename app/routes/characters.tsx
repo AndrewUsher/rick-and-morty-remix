@@ -112,7 +112,7 @@ export default function CharactersRoute (): ReactNode {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
   }
   const scrollToBottom = () => {
-    window.scrollTo({ top: 0, left: document.body.scrollHeight, behavior: 'smooth' })
+    window.scrollTo({ top: document.body.scrollHeight, left: 0, behavior: 'smooth' })
   }
 
   const handleOnClick = () => {
