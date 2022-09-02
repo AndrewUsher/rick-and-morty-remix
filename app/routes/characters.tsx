@@ -143,8 +143,8 @@ export default function CharactersRoute (): ReactNode {
           </article>
         ))}
       </div>
-      <div className="fixed bottom-10 right-10 animate-pulse scale-125">
-        <button onClick={handleOnClick}>
+      <div className="fixed bottom-10 right-10 hover:animate-pulse scale-125">
+        <button className="text-green-800" onClick={handleOnClick}>
           {scrollingDown ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +152,7 @@ export default function CharactersRoute (): ReactNode {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6">
+              className="w-12 h-12">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -166,7 +166,7 @@ export default function CharactersRoute (): ReactNode {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6">
+              className="w-12 h-12">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
